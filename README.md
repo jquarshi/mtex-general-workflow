@@ -11,6 +11,7 @@ pip install "mtex[all]" numpy matplotlib pytictoc
 
 # Using the workflow
 This process mirrors the MATLAB EBSD processing procedure used by the Taleff group. Images are stored in the folder that the EBSD data resides in, although it is a trivial fix to have a directory specified for saving. No images are shown to the user during the process except the ones that require user interaction. This saves resources by forcing matplotlib to close all figures after being used.
+```
 ┌─────────────────────────────────────────┐
 │        EBSD data is loaded              │
 └──────────────────┬──────────────────────┘
@@ -105,5 +106,5 @@ This process mirrors the MATLAB EBSD processing procedure used by the Taleff gro
 │  Miller indices selected for pole       │
 │  figure generation                      │
 └─────────────────────────────────────────┘   
-
+```
 This process is set in stone as of now. Future implementations will allow the user to select which processes should be done, allowing for workflow customization.
