@@ -6,6 +6,10 @@ source MTEX/bin/activate
 ```
 You should now have (MTEX) at the beginning of your username in the terminal prompt. Install all packages as follows:
 ```
+(base) josep MTEX % <- Before activating
+(MTEX) josep MTEX % <- After activating
+```
+```
 pip install "mtex[all]" numpy matplotlib pytictoc
 ```
 
