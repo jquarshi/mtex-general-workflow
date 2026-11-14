@@ -15,6 +15,8 @@ pip install "mtex[all]" numpy matplotlib pytictoc
 
 # Using the workflow
 This process mirrors the MATLAB EBSD processing procedure used by the Taleff group. Images are stored in the folder that the EBSD data resides in, although it is a trivial fix to have a directory specified for saving. No images are shown to the user during the process except the ones that require user interaction. This saves resources by forcing matplotlib to close all figures after being used.
+
+### NOTICE: Currently this workflow only supports 1 child per 1 parent grain and requires the user to iteratively remove them. The indexing for looking up 'n' number of grain boundaries wasn't working as I wanted so it will be in a future push.
 ```
 ┌─────────────────────────────────────────┐
 │        EBSD data is loaded              │
